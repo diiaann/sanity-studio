@@ -76,7 +76,17 @@ export default {
     // as a block type.
     {
       type: 'image',
-      options: {hotspot: true},
+      options: {
+        hotspot: true
+      },
+      fields: [
+          {
+              // Editing this field will be hidden behind an "Edit"-button
+              name: 'caption',
+              type: 'string',
+              title: 'Caption',
+          }
+      ],
     },
   ],
 }
