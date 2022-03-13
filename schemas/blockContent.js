@@ -80,12 +80,15 @@ export default {
         hotspot: true
       },
       fields: [
-          {
-              // Editing this field will be hidden behind an "Edit"-button
-              name: 'caption',
-              type: 'string',
-              title: 'Caption',
+        {
+          // Editing this field will be hidden behind an "Edit"-button
+          name: 'caption',
+          type: 'string',
+          title: 'Caption',
+          options: {
+            isHighlighted: true // <-- make this field easily accessible
           }
+        }
       ],
     },
   ],
